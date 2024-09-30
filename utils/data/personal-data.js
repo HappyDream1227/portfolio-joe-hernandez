@@ -6,7 +6,7 @@ export const personalData = {
   email: 'joe271227@gmail.com',
   phone: '+1 (765) 331 1950',
   address: 'Corpus Christi, TX, USA',
-  github: 'https://github.com/happydream1227',
+  github: 'https://github.com/devsky83',
   facebook: 'https://',
   linkedIn: 'https://www.linkedin.com/in/joe-hernandez-4850a9154/',
   twitter: 'https://',
