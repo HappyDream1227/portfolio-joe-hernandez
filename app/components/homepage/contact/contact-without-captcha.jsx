@@ -41,7 +41,7 @@ function ContactWithoutCaptcha() {
       const teleRes = await axios.post(`${process.env.NEXT_PUBLIC_APP_URL}/api/contact`, userInput);
 
       if (res.status === 200 || teleRes.status === 200) {
-
+        console.log('here')
         toast.success('Message sent successfully!');
         setUserInput({
           name: '',
@@ -51,7 +51,7 @@ function ContactWithoutCaptcha() {
       };
     } catch (error) {
       console.log(error)
-      toast.error(error?.text || error);
+      toast.error('Sorry, something went wrong!');
     };
   };
 

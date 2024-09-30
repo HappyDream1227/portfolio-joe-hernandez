@@ -2,7 +2,7 @@ export const experiences = [
   {
     id: 1,
     title: 'Lead UI Developer',
-    company: "Telefi (Atlanta, Georgia)",
+    company: "TeleFi (Atlanta, Georgia)",
     duration: "(Feb 2023 - Apr 2024)"
   },
   {
@@ -19,7 +19,7 @@ export const experiences = [
   },
   {
     id: 4,
-    title: "Junier Frontend Developer",
+    title: "Junior Frontend Developer",
     company: "DeepL (Hong Kong)",
     duration: "(Sep 2016 - Nov 2018)"
   }
