@@ -1,6 +1,7 @@
 // @flow strict
-
+import Image from 'next/image';
 import * as React from 'react';
+import Link from 'next/link';
 
 function ProjectCard({ project }) {
 
@@ -20,8 +21,8 @@ function ProjectCard({ project }) {
           {project.name}
         </p>
       </div>
-      <div className="overflow-hidden border-t-[2px] border-indigo-900 px-4 lg:px-8 py-4 lg:py-8">
-        <code className="font-mono text-xs md:text-sm lg:text-base">
+      <div className="flex items-center overflow-hidden border-t-[2px] gap-5 border-indigo-900 px-4 lg:px-8 py-4 lg:py-8">
+        <code className="font-mono text-xs md:text-sm lg:text-base max-w-[50%]">
           <div className="blink">
             <span className="mr-2 text-pink-500">const</span>
             <span className="mr-2 text-white">project</span>
@@ -63,6 +64,17 @@ function ProjectCard({ project }) {
           </div>
           <div><span className="text-gray-400">{`};`}</span></div>
         </code>
+
+          <Link
+            href={project.demo}
+            target="_blank"
+            className=" text-[#16f2b3] text-3xl font-bold w-full h-full">
+            <div className="relative w-full h-full">
+              <Image className="hover:scale-105 duration-300 rounded-2xl" width={640} height={400} src={project.image} alt="">
+              </Image>
+            </div>
+            
+          </Link>
       </div>
     </div>
   );
